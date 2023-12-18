@@ -37,8 +37,19 @@ MLE_sigma <- function(T_,X,a,b){
   return(sigma)
 }
 
-MLE_vasicek <- function(T_,X){
+MLE_vasicek_sesgo <- function(T_,X){
   a = MLE_a(T_,X)
+  b = MLE_b(T_, X, a)
+  sigma = MLE_sigma(T_, X, a, b)
+  return(c(a,b,sigma))
+}
+
+#Sin sesgo para el estimador a
+MLE_vasicek <- function(T_,X){
+  n = length(T_)-1
+  T = T_[length(T_)]
+  dt = T/n
+  a = n*(MLE_a(T_,X)-4/T)/(n+2)
   b = MLE_b(T_, X, a)
   sigma = MLE_sigma(T_, X, a, b)
   return(c(a,b,sigma))
