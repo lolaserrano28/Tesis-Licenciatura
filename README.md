@@ -1,7 +1,7 @@
 # Bienvenidx
 En este repositorio encontrarás mi Tesis de licenciatura **Estimación Paramétrica para Procesos de Difusión y Aplicaciones en Finanzas**. En esta Tesis se presenta una base teórica sobre cálculo estocástico, ecuaciones diferenciales estocásticas, procesos de difusión, y simulación y estimación paramétrica de dichos procesos. 
 
-La parte teórica sobre simulacoón y estimación paramétrica se complementa con implementación computacional de simuladores y estimadores. Se realiza estimación máximo verosímil y estimadores EM para los procesos de Vasicek y movimiento browniano geométrico.
+La parte teórica sobre simulación y estimación paramétrica se complementa con implementación computacional de simuladores y estimadores. Se realiza estimación máximo verosímil y estimadores EM para los procesos de Vasicek y movimiento browniano geométrico.
 
 Finalmente, las bases son aplicadas a dos aplicaciones financieras: modelos de tasa corta usando el proceso de Vasicek, valuación de opciones usando movimiento browniano geométrico. A partir de bases de datos reales se ajustan los modelos y se realiza estimación paramétrica.
 
